@@ -39,7 +39,18 @@ export default class Chart extends Component {
                 <div className="chart">
                     <Bar
                         data={this.state.chartData}
-                        options={{}}
+                        options={{
+                            title: {
+                                display:true,
+                                text: "Largest cities in Massachusetts",
+                                fontSize: 25 
+                            },
+                            
+                            legend: {
+                                display: true,
+                                position: 'right'
+                            }
+                        }}
                     />
                 </div>
             </div>
